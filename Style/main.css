@@ -8,9 +8,12 @@
     box-sizing: border-box;
 }
 
+/* Elementos da base */
+
 body{
     background: var(--preta);
-    font-family: 'Times New Roman', Times, serif';
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
 }
 
 header .container{
@@ -36,7 +39,44 @@ header nav a:hover{
     color: #fff;
 }
 
+/* Filme principal */
 
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgb(0, 0, 0,.50), rgb(0, 0, 0,100%)), url("/IMG/Capa_Euphoria.jpg");
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
+}
 
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
 
+.titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
 
+.botao{
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 10px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
